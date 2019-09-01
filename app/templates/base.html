@@ -61,7 +61,7 @@
                 </li>
                 <li><a href="{{ url_for('mentors') }}" class="animsition-link">Mentors</a></li>
                 <li><a href="blog.html" class="animsition-link">Blog</a></li>
-                <li><a href="contact.html" class="animsition-link">Contact</a></li>
+                <li><a href="{{ url_for('contact') }}" class="animsition-link">Contact</a></li>
               </ul> <!-- .templateux-menu -->
   
             </nav> <!-- .site-nav -->
@@ -80,7 +80,7 @@
             <div class="col-md-4 pr-md-5">
               <div class="block-footer-widget">
                 <h3>About</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <p>We are a community of social scientist, we are working to create an impact on social problems using data science.</p>
               </div>
               <div class="block-footer-widget">
                 <h3>Resource Supporter</h3>
@@ -109,7 +109,7 @@
                     <h3>Support</h3>
                     <ul class="list-unstyled">
                       <li><a href="#">FAQ</a></li>
-                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
                       <li><a href="#">Help Desk</a></li>
                       <li><a href="#">Knowledgebase</a></li>
                     </ul>
@@ -119,7 +119,7 @@
                   <div class="block-footer-widget">
                     <h3>About Us</h3>
                     <ul class="list-unstyled">
-                      <li><a href="#">About Us</a></li>
+                      <li><a href="{{ url_for('about') }}">About Us</a></li>
                       <li><a href="#">Careers</a></li>
                       <li><a href="#">Terms of Service</a></li>
                       <li><a href="#">Privacy Policy</a></li>

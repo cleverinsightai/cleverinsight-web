@@ -5,7 +5,6 @@ import os
 
 ALLOWED_EXTENSIONS = {'csv', 'CSV'}
 
-
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
@@ -41,13 +40,15 @@ def mentors():
         { 'first_name' : 'Dr. Regi', 'last_name': 'Mathew', 'bio': 'PhD in Agriculture Management from IIM Ahmedabad and Post Graduate in Engineering from IIT Kharagpur. Former AVP-Analytics at GENPACT.'},
         { 'first_name' : 'Dr. Vandana', 'last_name': 'Bhagat', 'bio': 'PhD in Advanced Query Optimization. Esteemed professor in the area of computer science and data science.'},
         { 'first_name' : 'Dr. Chandrika', 'last_name': 'Kambam', 'bio': 'PhD in Advanced Query Optimization. Esteemed professor in the area of computer science and data science.'},
-        { 'first_name' : 'Dr. Harsha', 'last_name': 'Doddihal', 'bio': 'PhD in Advanced Query Optimization. Esteemed professor in the area of computer science and data science.'},
+        { 'first_name' : 'Dr. Harsha', 'last_name': 'Doddihal', 'bio': 'PhD in Advanced Query Optimization. Esteemed professor in the area of computer science and data science.'}
     ]
+ 
     return render_template('mentors.html', mentors=mentors)
+
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    return ""
+    return render_template('contact.html')
 
 @app.route('/upload', methods=['GET', 'POST'])
 def upload_file():
