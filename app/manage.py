@@ -2,7 +2,7 @@ from flask_migrate import Migrate, MigrateCommand, Manager
 import os
 from app import app, db
 
-app_settings = os.getenv('APP_SETTINGS', 'project.server.config.DevelopmentConfig')
+app_settings = os.getenv('APP_SETTINGS', 'project.server.config.ProductionConfig')
 app.config.from_object(app_settings)
 
 migrate = Migrate(app, db)
