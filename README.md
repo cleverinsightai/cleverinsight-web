@@ -1,6 +1,5 @@
-# Student Admin Panel
-
-This flask application has used flask_admin package to do basic CRUD operations on basic student's records. In addition to these operations, we can easily use filtering, sorting kind of stuffs easily using flask_admin. Another great thing about his application is, this can handle importing of GBs of CSV data using panda which reads can read the file by chunk and we can write those to database :)
+# CleverInsight-Web
+The application is build using Flask as backend server
 
   - Uses SQLAlchemy, postgresql, flask_admin, pandas
   - jinja2 template and flask_admin uses bootstrap3
@@ -11,9 +10,9 @@ I really love to create virtual environment for each and every projects and supp
 
 ```sh
 # Create a virtual environment for this app
-$ virtualenv projectenv
+$ virtualenv venv
 # Activate the app's virtual environment
-$ source projectenv/bin/activate
+$ source venv/bin/activate
 $ cd flask-admin-example
 # Then install all dependencies using 
 # requirements.txt file included with the project
