@@ -1,0 +1,166 @@
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>CleverInsight OpenAI Foundation | We use data science for social good.</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+      <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='images/favicon/apple-icon-57x57.png') }}">
+      <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='images/favicon/apple-icon-60x60.png') }}">
+      <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='images/favicon/apple-icon-72x72.png') }}">
+      <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='images/favicon/apple-icon-76x76.png') }}">
+      <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='images/favicon/apple-icon-114x114.png') }}">
+      <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='images/favicon/apple-icon-120x120.png') }}">
+      <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='images/favicon/apple-icon-144x144.png') }}">
+      <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='images/favicon/apple-icon-152x152.png') }}">
+      <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/apple-icon-180x180.png') }}">
+      <link rel="icon" type="image/png" sizes="192x192"  href="{{ url_for('static', filename='images/favicon/android-icon-192x192.png') }}">
+      <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon/favicon-32x32.png') }}">
+      <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='images/favicon/favicon-96x96.png') }}">
+      <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon/favicon-16x16.png') }}">
+      <link rel="manifest" href="{{ url_for('static', filename='images/favicon/manifest.json') }}">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="{{ url_for('static', filename='images/favicon/ms-icon-144x144.png') }}">
+      <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+    
+    <div class="js-animsition animsition" id="site-wrap" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
+      <header class="templateux-navbar dark" role="banner">
+       
+        <div class="container"  data-aos="fade-down">
+          <div class="row">
+  
+            <div class="col-3 templateux-logo">
+              <a href="{{ url_for('index') }}" class="animsition-link">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" style="width: 300px;"/>
+              </a>
+            </div>
+            <nav class="col-9 site-nav">
+              <button class="d-block d-md-none hamburger hamburger--spin templateux-toggle templateux-toggle-light ml-auto templateux-toggle-menu" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button> <!-- .templateux-toggle -->
+  
+              <ul class="sf-menu templateux-menu d-none d-md-block">
+                <li class="active">
+                  <a href="index.html" class="animsition-link">Home</a>
+                </li>
+                <li><a href="{{ url_for('about') }}" class="animsition-link">About</a></li>
+                <li>
+                  <a href="{{ url_for('research') }}" class="animsition-link">Research Areas</a>
+                  <ul>
+                    <li><a href="/">Energy</a></li>
+                    <li><a href="/">Water</a></li>
+                    <li><a href="/">Agriculture</a></li>
+                    <li><a href="/">Climate</a></li>
+                    <li><a href="/">Transportation</a></li>
+                    <li><a href="/">Food Wastage</a></li>
+                    <li><a href="/">Health Science</a></li>
+                  </ul>
+                </li>
+                <li><a href="{{ url_for('mentors') }}" class="animsition-link">Mentors</a></li>
+                <li><a href="blog.html" class="animsition-link">Blog</a></li>
+                <li><a href="contact.html" class="animsition-link">Contact</a></li>
+              </ul> <!-- .templateux-menu -->
+  
+            </nav> <!-- .site-nav -->
+            
+  
+          </div> <!-- .row -->
+        </div> <!-- .container -->
+      </header> <!-- .templateux-navba -->
+      
+      {% block body %}{% endblock %}
+      
+      <footer class="templateux-footer bg-light">
+        <div class="container">
+  
+          <div class="row mb-5">
+            <div class="col-md-4 pr-md-5">
+              <div class="block-footer-widget">
+                <h3>About</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+              <div class="block-footer-widget">
+                <h3>Resource Supporter</h3>
+                <ul class="list-unstyled">
+                  <li><a href="https://github.com/cleverinsightai">GitHub</a></li>
+                  <li><a href="https://colorlib.com">ColorLib</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="block-footer-widget">
+                    <h3>Learn More</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="#">How it works?</a></li>
+                      <li><a href="#">Useful Tools</a></li>
+                      <li><a href="#">Sitemap</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="block-footer-widget">
+                    <h3>Support</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Help Desk</a></li>
+                      <li><a href="#">Knowledgebase</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="block-footer-widget">
+                    <h3>About Us</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Careers</a></li>
+                      <li><a href="#">Terms of Service</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <div class="col-md-3">
+                  <div class="block-footer-widget">
+                    <a href="#" class="btn btn-primary mb-3">Find Chapter</a>
+                    <p>Connect With Us</p>
+                    <ul class="list-unstyled block-social">
+                      <li><a href="https://www.facebook.com/cleverinsightAi" class="p-1"><span class="icon-facebook-square"></span></a></li>
+                      <li><a href="#" class="p-1"><span class="icon-twitter"></span></a></li>
+                      <li><a href="https://github.com/cleverinsightai" class="p-1"><span class="icon-github"></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div> <!-- .row -->
+              
+            </div>
+          </div> <!-- .row -->
+  
+          <div class="row pt-5 text-left">
+            <div class="col-md-12 text-left"><p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="icon-heart" aria-hidden="true"></i> with <a href="index.html" target="_blank" class="text-primary">India</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p></div>
+          </div> <!-- .row -->
+  
+        </div>
+      </footer> <!-- .templateux-footer -->
+      
+  
+     </div> <!-- .js-animsition -->
+  
+    
+    <script src="{{ url_for('static', filename='js/scripts-all.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    
+    </body>
+  </html>
+  

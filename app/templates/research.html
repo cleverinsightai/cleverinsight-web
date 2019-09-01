@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="templateux-section" style="padding-top: 100px;">
+    <div class="container">
+      <div class="row align-items-lg-center">
+      
+  </div>
+</div>
+  
+
+  <div class="templateux-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 block-heading-wrap" data-aos="fade-up">
+          <h2 class="heading mb-5 text-center">Area Of Research</h2>
+        </div>
+      </div> <!-- .row -->
+      <div class="row mb-5" data-aos="fade-up">
+        {% for topic in topics %}
+        <div class="col-md-6">
+          <h3>{{ topic.title}}</h3>
+          {{ topic.description|safe }}
+          <a href="">Know more</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div> <!-- .container -->
+    
+  </div> <!-- .templateux-section -->
+  
+
+
+  
+{% endblock %}

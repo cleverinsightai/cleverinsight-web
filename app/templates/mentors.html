@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="templateux-section" style="padding-top: 200px;">
+    <div class="container">
+        <div class="row" style="margin-left: 40%;">
+            <h3 >Social Scientist's</h3>
+        </div>
+    </div>
+</div>
+<div class="templateux-section">
+    <div class="container">
+        <div class="row mb-5">
+            {% for mentor in mentors %}
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="{{ 1 * 100 }}">
+            <div class="media block-icon-1 d-block text-center">
+                <div class="icon mb-3"><span class="ion-ios-analytics"></span></div>
+                <div class="media-body">
+                <h3 class="h5 ">{{ mentor.first_name }} {{ mentor.last_name}}</h3>
+                <small>Data Scientist</small>
+                <p>{{ mentor.bio }}</p>
+                <p><a href="#" class="btn btn-sm btn-primary px-3">Read More</a></p>
+                </div>
+            </div> <!-- .block-icon-1 -->
+            </div>
+            {% endfor %}
+        
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -10,12 +10,12 @@ db = SQLAlchemy(app)
 
 admin = flask_admin.Admin(
     app=app,
-    url='/',
-    name='Student Database',
+    url='/admin',
+    name='CleverInsight AI Foundation',
     template_mode='bootstrap3'
 )
 
 
 from app import views, models
 
-admin.add_view(StudentsAdminView(models.Student, db.session))
+# admin.add_view(StudentsAdminView(models.Student, db.session))

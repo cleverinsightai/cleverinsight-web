@@ -7,7 +7,7 @@ class Config(object):
     TESTING = False
     CSRF_ENABLED = True
     SECRET_KEY = 'this-really-needs-to-be-changed'
-    SQLALCHEMY_DATABASE_URI = 'postgresql://127.0.0.1:5432/nkhadka'
+    SQLALCHEMY_DATABASE_URI = 'postgresql://127.0.0.1:5432/cleverinsight'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
     UPLOAD_FOLDER = 'app/uploads'
 
