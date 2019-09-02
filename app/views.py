@@ -50,22 +50,7 @@ def mentors():
 def contact():
     return render_template('contact.html')
 
-@app.route('/upload', methods=['GET', 'POST'])
-def upload_file():
-    if request.method == 'POST':
-        if 'file' not in request.files:
-            flash('No file part')
-            return redirect(request.url)
-        _file = request.files['file']
-        if _file.filename == '':
-            flash('No selected file')
-            return redirect(request.url)
-        if _file and allowed_file(_file.filename):
-            filename = secure_filename(_file.filename)
-            _file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 
-            flash('File uploaded successfully')
-            return redirect('/')
-        else:
-            flash('Invalid file')
-    return redirect('/')
+@app.route('/get-involved')
+def get_involved():
+    return ""
