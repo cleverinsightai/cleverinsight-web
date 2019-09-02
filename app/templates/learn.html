@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="templateux-section" style="padding-top: 100px;">
+    <div class="container">
+      <div class="row align-items-lg-center">
+      
+  </div>
+</div>
+  
+
+  <div class="templateux-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 block-heading-wrap" data-aos="fade-up">
+          <h2 class="heading mb-5 text-center">Learning Resources</h2>
+        </div>
+      </div> <!-- .row -->
+      <div class="row mb-5" data-aos="fade-up">
+        {% for topic in topics %}
+        <div class="col-md-12">
+          <h3>{{ topic.title}}</h3>
+          <p></p>{{ topic.description }}</p>
+          <a href="{{ topic.url }}" class="btn btn-info" target="_blank">Know more</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div> <!-- .container -->
+    
+  </div> <!-- .templateux-section -->
+  
+
+
+  
+{% endblock %}

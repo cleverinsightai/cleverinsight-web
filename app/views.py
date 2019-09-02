@@ -51,6 +51,13 @@ def contact():
     return render_template('contact.html')
 
 
+@app.route('/learn', methods=['GET'])
+def learn():
+    topics = [
+        { 'title': 'Statistics resources', 'url': 'https://brohrer.github.io/stats_resources.html', 'description': 'So, you want to learn statistics but you’re not sure where to start?'}
+    ]
+    return render_template('learn.html', topics=topics)
+
 @app.route('/get-involved')
 def get_involved():
     return ""

@@ -44,7 +44,7 @@
   
               <ul class="sf-menu templateux-menu d-none d-md-block">
                 <li class="active">
-                  <a href="index.html" class="animsition-link">Home</a>
+                  <a href="{{ url_for('index') }}" class="animsition-link">Home</a>
                 </li>
                 <li><a href="{{ url_for('about') }}" class="animsition-link">About</a></li>
                 <li>
@@ -109,6 +109,7 @@
                     <ul class="list-unstyled">
                       <li><a href="#">How it works?</a></li>
                       <li><a href="https://discordapp.com/invite/aAMhJ5p" target="_blank">#Join Discord</a></li>
+                      <li><a href="{{ url_for('learn') }}">Learn</a></li>
                       <li><a href="#">Sitemap</a></li>
                     </ul>
                   </div>
@@ -156,7 +157,7 @@
           <div class="row pt-5 text-left">
             <div class="col-md-12 text-left"><p>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="icon-heart" aria-hidden="true"></i> with <a href="index.html" target="_blank" class="text-primary">India</a>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="icon-heart" aria-hidden="true"></i> with <a href="{{ url_for('index') }}" target="_blank" class="text-primary">India</a>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p></div>
           </div> <!-- .row -->
