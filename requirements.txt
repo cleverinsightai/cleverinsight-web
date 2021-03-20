@@ -9,7 +9,7 @@ Flask-SQLAlchemy==2.1
 Flask-Uploads==0.2.1
 #functools32==3.2.3.post2
 itsdangerous==0.24
-Jinja2==2.9.6
+Jinja2==2.11.3
 jsonschema==2.6.0
 Mako==1.0.7
 MarkupSafe==1.0
